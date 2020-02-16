@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: none;
+}
+
+a,
+a:link,
+a:visited {
+  color: $color-green;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: $default-font-size;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  font-weight: 700;
+  font-size: $default-font-size;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  // background-color: $color-platinum;
+  background-color: $color-white;
+  font-family: 'Ubuntu', sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  @include respond(phone) {
+    // width < 600?
+    font-size: 35%;
+  }
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
+}
+
+body {
+  width: 100vw;
+  box-sizing: border-box;
+  position: relative;
+}
+
+::selection {
+  background-color: $color-green;
+  color: $color-white;
+}

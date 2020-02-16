@@ -1,0 +1,10 @@
+footer {
+  padding: 3rem;
+  background-color: $color-dark;
+
+  & p {
+    color: $color-gray;
+    font-size: $default-font-size;
+    margin: 2rem 0;
+  }
+}

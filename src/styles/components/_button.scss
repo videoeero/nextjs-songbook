@@ -1,0 +1,25 @@
+.button {
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  margin: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0px 2px 5px rgba(8, 5, 5, 0.3);
+  font-size: $default-font-size;
+  text-align: center;
+  display: inline-block;
+
+  position: relative;
+  background-color: $color-green;
+
+  color: $color-white !important;
+  min-width: 20rem;
+
+  @include respond(phone) {
+    margin: 1rem;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+  }
+}

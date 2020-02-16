@@ -1,0 +1,16 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__column {
+    flex-direction: column;
+  }
+}
+
+.absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

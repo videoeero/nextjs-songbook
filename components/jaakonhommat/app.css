@@ -1,0 +1,62 @@
+*{
+    list-style-type: none;
+   
+    font-family: 'Montserrat', 'sans-serif';
+    /* color: #35b233; */
+}
+
+#logo{
+    width: 1.8em;
+    height: 1.8em;
+    background-color: transparent;
+}
+#header{
+    background-color: black;
+    color: #35b233  ;
+}
+
+#link {
+    color: #35b233;
+}
+
+#toprow{
+    background-color: #35b233;
+    color: white;
+    height: 2.25em;
+}
+
+#indent{
+    text-indent: 5em;
+    
+}
+#tablerow{
+    
+    color: #35b235;
+    border-bottom: 0.05em solid gray;
+    
+}
+
+#songlist, #song{
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 5%;
+}
+
+#search{
+    width: 100%;
+    border: 0.2em solid lightgray;
+    border-radius: 0.35em;
+    height: 2.5em;
+}
+
+
+#main{
+    align-content: center;
+    justify-content: center;
+    
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
