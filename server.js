@@ -8,7 +8,7 @@ app.prepare().then(() => {
   const server = express();
 
   server.get('/song/:id', (req, res) => {
-    app.render(req, res, '/song', req.params);
+    app.render(req, res, '/song/song', req.params);
   });
 
   server.get('*', (req, res) => {
@@ -17,6 +17,6 @@ app.prepare().then(() => {
 
   server.listen(3000, err => {
     if (err) throw err;
-    console.log('Now serving on localhost:3000');
+    console.log('Server is running...');
   });
 });

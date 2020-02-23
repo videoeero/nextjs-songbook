@@ -12,7 +12,6 @@ class Song extends Component {
 
   render() {
     const { songdata, query } = this.props;
-    console.log(query.id);
 
     let result = songdata.find(song => {
       return song.number === query.id;
