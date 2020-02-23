@@ -66,7 +66,7 @@ class Home extends Component {
             {filtered.map(song => (
               <Link
                 key={song.number}
-                href={`/song/${song.number}`}
+                href={`/song/[song]`}
                 as={`/song/${song.number}`}
               >
                 {/* <Link key={song.number} href={`/${song.number}`}> */}

@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next",
+    "dev-customserver": "node server.js",
     "build": "next build",
-    "start": "SET NODE_ENV=production & node server.js"
+    "start": "next start",
+    "startcustomserver": "SET NODE_ENV=production & node server.js"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
