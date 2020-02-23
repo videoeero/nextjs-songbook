@@ -1,0 +1,32 @@
+.song {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 80vh;
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &__meta {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  &__lyrics {
+    &__row {
+      margin: 1.2rem 0;
+
+      & p.strong {
+        margin-top: 3rem;
+      }
+
+      &__indent {
+        @extend .song__lyrics__row;
+        margin-left: 2rem;
+      }
+    }
+  }
+}

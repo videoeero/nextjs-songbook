@@ -1,6 +1,6 @@
 section {
-  @include flex__column;
-  padding: 6rem 0 2rem 0;
+  @include flex;
+  padding: 4rem 1rem;
   min-height: 30vh;
   // justify-content: flex-start;
 }

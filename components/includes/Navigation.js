@@ -16,7 +16,7 @@ class Navigation extends Component {
               <img className='nav__logo' src='/img/logo.png' alt='Etusivu' />
             </a>
           </Link>
-          <p className='nav__item'>Tää on navigaatio</p>
+          {/* <p className='nav__item'>Tää on navigaatio</p> */}
         </nav>
       </>
     );

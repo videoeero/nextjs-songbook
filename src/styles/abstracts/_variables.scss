@@ -1,27 +1,25 @@
 // THEME COLORS
 
-$color-green: #28e4ab;
-$color-green-2: #17aa61;
-$color-green-3: #24ce9b;
-$color-platinum: #e9e7ee;
-
-// $color-green: #bbdbb4;
-
-// $color-green: #8bbf9f;
+$color-green: #35b233;
+// $color-green-2: #4da167;
+$color-green-2: #94e8b4;
+// $color-green-3: #4e6e5d;
+$color-green-3: #72bda3;
+$color-green-4: #4e6151;
 
 // COLORS
 
 $color-black: #000000;
-$color-dark: #0b0b16;
+$color-dark: #4d5057;
+$color-dark: #3b322c;
 
 $color-light: #e7e7e7;
 $color-lighter: #fdfdfd;
-$color-gray: #9a9a9a;
+$color-gray: #cfcfcf;
 $color-gray-2: #585d59;
 
 $color-white: #ffffff;
 
 // FONT
 $default-font-size: 1.6rem;
-
-$gradient-green: linear-gradient(to left, $color-green-2, $color-green);
+$gradient-green: linear-gradient(160deg, $color-green-3, $color-green-2);

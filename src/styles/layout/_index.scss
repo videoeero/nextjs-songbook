@@ -1,0 +1,23 @@
+.songlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+
+  &__item {
+    margin: 1rem;
+    font-size: 2rem;
+
+    @include respond(phone) {
+      font-size: $default-font-size;
+      margin: 0.7rem;
+    }
+    &__number {
+      color: $color-dark;
+      margin-right: 2rem;
+    }
+
+    &__title {
+    }
+  }
+}

@@ -23,6 +23,9 @@ class SonglistComponent extends Component {
   }
 
   render() {
+    const { laulukirja } = this.props;
+    console.log(laulukirja[1]);
+
     var filtered = this.state.songs.filter(
       song =>
         this.state.search.toLowerCase() ===
@@ -65,18 +68,18 @@ class SonglistComponent extends Component {
   }
   async componentDidMount() {
     try {
-      // let songs = await axios.get('/laulukirjaV3.json', {
-      //   headers: {
-      //     'Content-Type': 'application/json'
-      //   }
-      // });
-      // let songdata = songs.data;
-      let songs = await axios.get('http://localhost:3000/api/v1/songbook/42', {
+      let songs = await axios.get('/laulukirja.json', {
         headers: {
           'Content-Type': 'application/json'
         }
       });
-      let songdata = songs.data.songs;
+      let songdata = songs.data;
+      // let songs = await axios.get('http://localhost:3000/api/v1/songbook/42', {
+      //   headers: {
+      //     'Content-Type': 'application/json'
+      //   }
+      // });
+      // let songdata = songs.data.songs;
       // console.log(songdata);
       let sortedSongs = songdata.sort((a, b) => (a.number > b.number ? 1 : -1));
       this.setState({

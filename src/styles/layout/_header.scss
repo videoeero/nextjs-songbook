@@ -1,15 +1,7 @@
 .header {
   @include flex;
   position: relative;
-  min-height: 30vh;
-  background-color: $color-green;
+  background-color: $color-green-2;
+  background-image: $gradient-green;
   width: 100vw;
-
-  @include respond(tab-port) {
-    min-height: 30vh;
-  }
-
-  @include respond(phone) {
-    min-height: 22rem;
-  }
 }

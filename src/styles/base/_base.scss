@@ -10,11 +10,14 @@
 a,
 a:link,
 a:visited {
-  color: $color-green;
+  color: $color-green-3;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s;
-  font-size: $default-font-size;
+
+  &:hover {
+    // color: $color-green-4;
+  }
 }
 
 button {

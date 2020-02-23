@@ -1,0 +1,54 @@
+.songlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+  max-width: 90vw;
+
+  &__search {
+    margin-bottom: 2rem;
+    // width: 50rem;
+
+    & #search {
+      width: 100%;
+      padding: 1rem;
+      font-size: 2rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1rem;
+    font-size: 2rem;
+    transition: all ease-in-out;
+
+    @include respond(phone) {
+      font-size: $default-font-size;
+      margin: 0.7rem;
+    }
+
+    &:hover {
+      transform: translateX(0.7rem);
+
+      & .songlist__item__number {
+        color: $color-green-3;
+      }
+
+      & .songlist__item__title {
+        color: $color-dark;
+      }
+    }
+
+    &__number {
+      color: $color-dark;
+      margin-right: 2rem;
+      transition: all 0.3s;
+    }
+
+    &__title {
+      transition: all 0.3s;
+    }
+  }
+}
